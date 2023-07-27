@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do App</h1>
+    <div class="input-container">
+      <input type="text" id="taskDescription" placeholder="Description (up to 160 characters)" maxlength="160" required>
+      <input type="datetime-local" id="taskDeadline">
+      <button onclick="addItem()">Add</button>
+    </div>
+    <div class="sort-container">
+      <label for="sortOrder">Sort by:</label>
+      <select id="sortOrder" onchange="sortItems()">
+        <option value="recent">Recently Added</option>
+        <option value="deadline">Deadline</option>
+        <option value="completed">Recently Completed</option>
+      </select>
+    </div>
+    <div class="names">
+      <ul>Completion</ul> 
+      <ul>Description</ul>
+      <ul>TimeLeft</ul>
+      <ul>Delete</ul>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
