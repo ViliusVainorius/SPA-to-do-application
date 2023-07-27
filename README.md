@@ -1,4 +1,6 @@
 # SPA-to-do-application
+Single Page Application To-Do app.
+
 Used languages:
   - HTML
   - CSS
